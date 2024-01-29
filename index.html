@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,8 @@
         }
 
         header {
-            background-color: #FF69B4;
+            background-image: url('images/web.png'); /* Fixed syntax error here */
+            background-size: cover; /* Added for better background image handling */
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -158,8 +158,9 @@
                 padding: 30px;
             }
         }
-		  #about {
-       
+
+        /* Added styles for the about section */
+        #about {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -168,10 +169,8 @@
         }
     </style>
 </head>
-
 <body>
-
-    <header style=background-image:url ('images/web.png')>
+    <header>
         <h1>Kishore kumar SS</h1>
         <nav>
             <a href="#home">Home</a>
@@ -186,40 +185,36 @@
         <h3>Hi Kishore!</h3>
         <h2><i>Welcome to Kishore's Website</i></h2>
     </section>
-	<img src="images/kishore kumar.jpg" width="257px" height="400px" style="float: left; margin-right: 10px;">
-	<img src="images/kishore kumar_1.jpg" width="310px" height="369px" style="float:right; margin-right: 10px;">
 
+    <img src="images/kishore kumar.jpg" width="257px" height="400px" style="float: left; margin-right: 10px;">
+    <img src="images/kishore kumar_1.jpg" width="310px" height="369px" style="float:right; margin-right: 10px;">
 
     <section id="about">
-        <h2 style="color:darkpink";>About Me:</h2>
-		
-        <p style=font-size:30px;> <b>"I am Kishore kumar , deeply enthusiastic about exploring the multifaceted realms of technology and programming."</b></p>
+        <h2 style="color:darkpink;">About Me:</h2>
+        <p style="font-size: 30px;"><b>"I am Kishore kumar, deeply enthusiastic about exploring the multifaceted realms of technology and programming."</b></p>
     </section>
-	<div style="text-align: center; background-color:white; padding: 60px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
-    <h2><b>MY hobby :</b></h2>
-    <p>Playing badminton :</p>
-    <img width="300px" height="200px" src="images/bat.jpg" >
-    
-    <h2><b>My interest:</b></h2>
-    <p>Coding:</p>
-    
-    <img width="300px" height="200px" src="images/int.jpg" />
-</div>
 
+    <div style="text-align: center; background-color:white; padding: 60px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+        <h2><b>My hobby:</b></h2>
+        <p>Playing badminton</p>
+        <img width="300px" height="200px" src="images/bat.jpg">
 
-    <section  id style="background-color:white;"="projects">
-        <h2 >Projects:</h2>
+        <h2><b>My interest:</b></h2>
+        <p>Coding</p>
+        <img width="300px" height="200px" src="images/int.jpg">
+    </div>
+
+    <section id="projects">
+        <h2>Projects:</h2>
         <ul>
-            <li><b>BMI Calculator</li>
-            <li><b>Calculator</li>
-			<li><b> 7-bit decoder basic</li>
-			
+            <li><b>BMI Calculator</b></li>
+            <li><b>Calculator</b></li>
+            <li><b>7-bit decoder basic</b></li>
             <!-- Add more projects here -->
         </ul>
-       
     </section>
 
-    <section id="achievements:">
+    <section id="achievements">
         <h2>Skills:</h2>
         <table>
             <tr>
@@ -247,7 +242,7 @@
                 <td>Beginner</td>
             </tr>
         </table>
-        <h3>Related Web Development</h3>
+        <h3>Related Web Development:</h3>
         <ul>
             <li><b>Front-end Development</b></li>
             <li>HTML</li>
@@ -261,49 +256,36 @@
             <li>
                 <b>Intern at Kishore.</b>
                 <ul>
-                    <li>December, 2020 - Present.</li>
-                    <li>Write technical articles on programming-related topics.</li>
+                    <li>December, 2020 - Present</li>
+                    <li>Write technical articles on programming-related topics</li>
                 </ul>
             </li>
             <!-- Add more achievements here -->
         </ul>
     </section>
 
-      <section id style="background-color:white" ="contact :">
+    <section id="contact">
         <h2>Contact</h2>
         <p>9876543210</p>
-    <div style="float: left;">
-        <a href="https://www.linkedin.com/in/kishore-kumar-ss-8082ab27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-            <img src="C:\Users\Dell\OneDrive\Desktop\kishore_web\images\linkedin_logo.png" alt="linkedin" width="50" height="50">
-        </a>
-    </div>
-    <br>
-    <br>
-	<br>
-    <div style="float: left; margin-left: 5px;">
-        <a href="mailto:kishorekumarsskh@gmail.com" target="_blank">
-            <img src="C:\Users\Dell\OneDrive\Desktop\kishore_web\images\gmail.jpg" alt="gmail" width="50" height="200">
-        </a>
-    </div>
-    <!-- Add your contact form fields here -->
-</section>
-
-       
- 
-	<br>
-	<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+        <div style="float: left;">
+            <a href="https://www.linkedin.com/in/kishore-kumar-ss-8082ab27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="images/linkedin_logo.png" alt="linkedin" width="50" height="50">
+            </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="float: left; margin-left: 5px;">
+            <a href="mailto:kishorekumarsskh@gmail.com" target="_blank">
+                <img src="images/gmail.jpg" alt="gmail" width="50" height="50">
+            </a>
+        </div>
+        <!-- Add your contact form fields here -->
+    </section>
 
     <footer>
-        <p height = 200 px >&copy; Copyright 2050 by Kishore. All rights reserved. </p>
+        <p>&copy; Copyright 2050 by Kishore. All rights reserved.</p>
         <a href="#header">TOP</a>
     </footer>
-
 </body>
-
 </html>
